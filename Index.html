@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My JavaScript Projects 🚀</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #f9a8d4, #a5b4fc, #6ee7b7);
+            background-size: 300% 300%;
+            animation: gradientBG 12s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeDown 1.2s ease;
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+            width: 85%;
+            max-width: 1000px;
+            animation: fadeUp 1.5s ease;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.08) rotate(-1deg);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(145deg, #fdfbfb, #ebedee);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #111;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My JavaScript Projects 🚀</h1>
+    <div class="container">
+        <div class="card">
+            <a href="EcomersProject.html" target="_blank">E-Commerce Project</a>
+            <p class="desc">An online shopping project with product listings, cart system, and checkout page.</p>
+        </div>
+        <div class="card">
+            <a href="Form.html" target="_blank">Form Project</a>
+            <p class="desc">A simple form with validations to collect and process user input effectively.</p>
+        </div>
+        <div class="card">
+            <a href="planetsellingecommerce.html" target="_blank">Planet Selling E-Commerce</a>
+            <p class="desc">A fun e-commerce concept where users can explore and “buy” different planets.</p>
+        </div>
+        <div class="card">
+            <a href="Simple-Portfolio.html" target="_blank">Simple Portfolio</a>
+            <p class="desc">A basic personal portfolio website showcasing skills, projects, and contact info.</p>
+        </div>
+    </div>
+</body>
+
+</html>
